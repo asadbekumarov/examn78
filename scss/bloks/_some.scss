@@ -1,0 +1,40 @@
+.some__section {
+  background-color: #012f34;
+  .some__section__content {
+    h1 {
+      text-align: center;
+      padding-top: 112px;
+      padding-bottom: 52px;
+      color: #fff;
+      font-family: Livvic;
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 48px;
+    }
+    .some__logo {
+      flex-wrap: wrap;
+      gap: 26px;
+      padding-bottom: 113px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+// RESPANSIVE
+
+@media (max-width: 888px) {
+  .some__section__content {
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .some__logo {
+      text-align: center;
+      justify-content: center !important;
+    }
+  }
+}

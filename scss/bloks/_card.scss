@@ -1,0 +1,89 @@
+.meet__section {
+  background-color: #004047;
+  position: relative;
+}
+.meet__section__content {
+  h2 {
+    padding-top: 140px;
+    padding-bottom: 64px;
+    text-align: center;
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #fff;
+  }
+  .meet__section__content__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card {
+    text-align: center;
+    background-color: #012f34;
+    position: relative;
+    margin-bottom: 120px;
+    padding-bottom: 56px;
+    .pilus {
+      position: absolute;
+      top: 200px;
+      left: 20px;
+      z-index: 1;
+    }
+    img {
+      padding: 35px 119px 0;
+    }
+    h6 {
+      padding-top: 13px;
+      font-family: Livvic;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      color: #79c8c7;
+    }
+    p {
+      color: red;
+      display: none;
+    }
+    i {
+      font-family: Livvic;
+      font-size: 15px;
+      line-height: 25px;
+      color: #fff;
+    }
+    button:active {
+      p {
+        display: flex;
+      }
+    }
+  }
+}
+// respansive{
+@media (max-width: 1142px) {
+  .meet__section__content__cards {
+    gap: 30px;
+    justify-content: center !important;
+    .card {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 390px) {
+  .meet__section__content {
+    .meet__section__content__cards {
+      .card {
+        img {
+          padding: 35px 80px 0;
+        }
+      }
+    }
+  }
+  .meet__section__content {
+    .card-text {
+      p {
+        width: 250px;
+      }
+    }
+  }
+}
