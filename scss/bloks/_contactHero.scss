@@ -1,0 +1,121 @@
+.hero__section {
+  background-color: #014e56;
+}
+.hero__section__content {
+  padding-bottom: 114px;
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    padding-bottom: 16px;
+    font-family: Livvic;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+    color: #fff;
+  }
+  h3 {
+    padding-bottom: 32px;
+    font-family: Livvic;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #f67e7e;
+  }
+  .personals {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .personal {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    p {
+      margin-top: 0;
+      padding-top: 0;
+      font-family: Livvic;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      color: #fff;
+    }
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      padding: 0 20px 20px 20px;
+      color: #fff;
+      max-width: 540px;
+      outline: none;
+    }
+    ::placeholder {
+      color: #f67e7e;
+    }
+  }
+}
+.hero__section__content {
+  .input {
+    .Message {
+      input {
+        padding-bottom: 55px;
+        max-width: 540px !important;
+      }
+    }
+    .button {
+      button {
+        margin-top: 40px;
+        padding: 10px 32px;
+        background-color: #fff;
+        border-radius: 30px;
+        font-family: Livvic;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 28px;
+        color: #004047;
+        border: 2px solid #fff;
+        outline: none;
+      }
+      button:hover {
+        background-color: #014e56;
+        color: #fff;
+        transition: all 0.2s;
+      }
+      bottom:active {
+        scale: 0.95;
+      }
+    }
+  }
+}
+
+// respansive{
+
+@media (max-width: 990px) {
+  .hero__section__content {
+    text-align: center;
+    flex-direction: column;
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+    .personal {
+      justify-content: center;
+    }
+  }
+  .hero__section__content {
+    .input {
+      text-align: center;
+      justify-content: center;
+      input {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
